@@ -20,6 +20,7 @@ This repository provides comprehensive documentation and resources for deploying
   - [HyperShield](docs/cisco_hypershield.md)
   - [ThousandEyes](docs/cisco_thousandeyes.md)
   - [Catalyst SD-WAN](docs/cisco_catalyst_sdwan.md)
+  - [Azure Stack HCI on Cisco UCS](docs/cisco_azure_astck_hci.md)
   - [Multicloud Defense](docs/cisco_multicloud_defense.md)
   - [Secure Firewall](docs/cisco_secure_firewall.md)
   - [Intersight](docs/cisco_intersight.md)
