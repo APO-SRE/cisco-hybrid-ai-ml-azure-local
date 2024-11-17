@@ -138,6 +138,6 @@ Look for `cisco-mlflow-azureml-env` in the output.
 ## References
 
 - [Azure Machine Learning Environments](https://learn.microsoft.com/azure/machine-learning/concept-environments)
-- [Create and Manage Environments with Azure CLI](https://learn.microsoft.com/azure/machine-learning/how-to-manage-environments-cli)
+- [Create and Manage Environments with Azure CLI](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-environments-v2?view=azureml-api-2&tabs=cli)
 - [Azure ML CLI Extension](https://learn.microsoft.com/azure/machine-learning/how-to-configure-cli)
 
