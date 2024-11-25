@@ -1,6 +1,6 @@
-# AKS Deployment Guide on Azure Stack HCI with Azure Arc
+# AKS Deployment Guide on Azure Local with Azure Arc
 
-This guide provides step-by-step instructions for deploying an AKS cluster on Azure Stack HCI using Azure Arc, with a focus on network requirements, IP address planning, and logical network setup before creating the AKS cluster.
+This guide provides step-by-step instructions for deploying an AKS cluster on Azure Local using Azure Arc, with a focus on network requirements, IP address planning, and logical network setup before creating the AKS cluster.
 
 ---
 
@@ -23,21 +23,21 @@ This guide provides step-by-step instructions for deploying an AKS cluster on Az
 
 ## Introduction
 
-This guide focuses on creating a Kubernetes cluster on Azure Stack HCI, with preliminary steps for ensuring proper networking and IP address configuration. The cluster will be Azure Arc-connected, allowing for management via Azure.
+This guide focuses on creating a Kubernetes cluster on Azure Local, with preliminary steps for ensuring proper networking and IP address configuration. The cluster will be Azure Arc-connected, allowing for management via Azure.
 
 ---
 
 ## Prerequisites
 
 Before beginning, ensure you have:
-- **Azure Stack HCI Already Deployed**
-  - [Azure Stack HCI Deployment](hci_deployment_guide.md)
+- **Azure Local Already Deployed**
+  - [Azure Local Deployment](hci_deployment_guide.md)
 - **Azure Subscription ID**
-- **Custom Location ID**: Set up during Azure Stack HCI deployment. Use the command below if needed:
+- **Custom Location ID**: Set up during Azure Local deployment. Use the command below if needed:
   ```bash
   az customlocation show --name "<custom location name>" --resource-group <resource group> --query "id" -o tsv
   ```
-- **Network ID**: The logical network ID in Azure Stack HCI.
+- **Network ID**: The logical network ID in Azure Local.
   ```bash
   az stack-hci-vm network lnet show --name "<lnet name>" --resource-group <resource group> --query "id" -o tsv
   ```
@@ -56,7 +56,7 @@ Ensure your network meets the following requirements for AKS enabled by Azure Ar
 - **AKS Cluster VMs**: Assign static IPs for each Kubernetes node.
 - **Control Plane IP**: Reserve an immutable IP for the Kubernetes control plane. This IP must be within the logical network's address prefix but outside the IP pool range.
 - **Load Balancer IPs**: Reserve a set of IP addresses for the load balancer service to avoid IP conflicts with the control plane and logical network.
-- **Proxy and DNS Settings**: Confirm your DNS server can resolve the Azure Stack HCI cluster FQDN. Adjust proxy settings as needed.
+- **Proxy and DNS Settings**: Confirm your DNS server can resolve the Azure Local cluster FQDN. Adjust proxy settings as needed.
   
 For more details, see [AKS enabled by Azure Arc Network Requirements](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-hci-network-system-requirements).
 
@@ -73,7 +73,7 @@ Refer to [IP Address Planning Requirements](https://learn.microsoft.com/en-us/az
 
 ### 3. Create Logical Networks for AKS Clusters
 
-To create a logical network on Azure Stack HCI, follow these steps:
+To create a logical network on Azure Local, follow these steps:
 
 1. **List VM Switches**: Identify the VM switch to associate with the logical network.
    ```powershell
@@ -146,7 +146,7 @@ Deploy a sample multi-container application (e.g., web front-end and Redis backe
 
 ## References
 
-- [AKS on Azure Stack HCI Network Requirements](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-hci-network-system-requirements)
+- [AKS on Azure Local Network Requirements](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-hci-network-system-requirements)
 - [IP Address Planning for AKS](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-hci-ip-address-planning)
 - [Create Kubernetes Clusters using Azure CLI](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-create-clusters-cli)
 

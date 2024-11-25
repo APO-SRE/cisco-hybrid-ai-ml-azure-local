@@ -1,6 +1,6 @@
-# Hugging Face LLM Deployment Guide on Azure Arc-enabled AKS on Azure Stack HCI with Cisco UCS
+# Hugging Face LLM Deployment Guide on Azure Arc-enabled AKS on Azure Local with Cisco UCS
 
-This guide provides step-by-step instructions to deploy a Hugging Face Large Language Model (LLM) and expose it as an endpoint running as containers on your Azure Arc-enabled Kubernetes Service (AKS) cluster on Azure Stack HCI with Cisco UCS hardware. This deployment leverages your on-premises infrastructure while integrating with Azure services for management and monitoring.
+This guide provides step-by-step instructions to deploy a Hugging Face Large Language Model (LLM) and expose it as an endpoint running as containers on your Azure Arc-enabled Kubernetes Service (AKS) cluster on Azure Local with Cisco UCS hardware. This deployment leverages your on-premises infrastructure while integrating with Azure services for management and monitoring.
 
 ---
 
@@ -10,7 +10,7 @@ This guide provides step-by-step instructions to deploy a Hugging Face Large Lan
 - [Prerequisites](#prerequisites)
 - [Architecture Overview](#architecture-overview)
 - [Deployment Steps](#deployment-steps)
-  - [1. Set Up Azure Stack HCI and AKS](#1-set-up-azure-stack-hci-and-aks)
+  - [1. Set Up Azure Local and AKS](#1-set-up-azure-stack-local-and-aks)
   - [2. Prepare the Hugging Face LLM Docker Image](#2-prepare-the-hugging-face-llm-docker-image)
   - [3. Deploy the LLM as a Container on AKS](#3-deploy-the-llm-as-a-container-on-aks)
   - [4. Expose the LLM Endpoint](#4-expose-the-llm-endpoint)
@@ -24,9 +24,9 @@ This guide provides step-by-step instructions to deploy a Hugging Face Large Lan
 
 ## Introduction
 
-Deploying a Hugging Face LLM on your Azure Stack HCI provides a powerful on-premises solution for running advanced language models. By leveraging Azure Arc-enabled AKS, you can manage your Kubernetes clusters and applications using familiar Azure tools while maintaining control over your data and infrastructure.
+Deploying a Hugging Face LLM on your Azure Local provides a powerful on-premises solution for running advanced language models. By leveraging Azure Arc-enabled AKS, you can manage your Kubernetes clusters and applications using familiar Azure tools while maintaining control over your data and infrastructure.
 
-This guide walks you through deploying a Hugging Face LLM as a containerized application on your Azure Arc-enabled AKS cluster running on Azure Stack HCI with Cisco UCS servers.
+This guide walks you through deploying a Hugging Face LLM as a containerized application on your Azure Arc-enabled AKS cluster running on Azure Local with Cisco UCS servers.
 
 ---
 
@@ -35,8 +35,8 @@ This guide walks you through deploying a Hugging Face LLM as a containerized app
 Before you begin, ensure you have the following:
 
 - **Azure Subscription**: An active Azure subscription.
-- **Azure Stack HCI Cluster**: Deployed and configured on Cisco UCS hardware.
-- **Azure Arc-enabled Kubernetes Cluster**: AKS cluster set up on Azure Stack HCI and connected to Azure Arc.
+- **Azure Local Cluster**: Deployed and configured on Cisco UCS hardware.
+- **Azure Arc-enabled Kubernetes Cluster**: AKS cluster set up on Azure Local and connected to Azure Arc.
 - **Docker**: Installed on your local machine for building Docker images.
 - **Azure Container Registry (ACR)**: For storing your Docker images.
 - **Azure CLI**: Installed and configured on your local machine.
@@ -48,7 +48,7 @@ Before you begin, ensure you have the following:
 
 The deployment consists of the following components:
 
-- **Compute and Storage**: Cisco UCS servers running Azure Stack HCI and hosting the AKS cluster.
+- **Compute and Storage**: Cisco UCS servers running Azure Local and hosting the AKS cluster.
 - **Containerized LLM**: A Docker container running the Hugging Face LLM.
 - **Networking**: Configured to allow communication between the LLM endpoint and clients.
 - **Management**: Azure Arc-enabled Kubernetes for cluster and application management.
@@ -58,14 +58,14 @@ The deployment consists of the following components:
 
 ## Deployment Steps
 
-### 1. Set Up Azure Stack HCI and AKS
+### 1. Set Up Azure Local and AKS
 
-Ensure your Azure Stack HCI cluster is properly deployed on Cisco UCS hardware and that AKS is installed and connected to Azure Arc.
+Ensure your Azure Local cluster is properly deployed on Cisco UCS hardware and that AKS is installed and connected to Azure Arc.
 
 **References**:
 
-- [Azure Stack HCI Deployment Guide on Cisco UCS](hci_deployment_guide.md)
-- [AKS on Azure Stack HCI Deployment](aks_deployment_guide.md)
+- [Azure Local Deployment Guide on Cisco UCS](hci_deployment_guide.md)
+- [AKS on Azure Local Deployment](aks_deployment_guide.md)
 
 
 ### 2. Prepare the Hugging Face LLM Docker Image
@@ -335,7 +335,7 @@ With Azure Arc and Azure Monitor configured, you can monitor the health and perf
 ## References
 
 - **Hugging Face Transformers**: [Hugging Face Transformers Documentation](https://huggingface.co/docs/transformers/index)
-- **AKS on Azure Stack HCI 23H2 architecture**: [Azure Stack HCI AKS Docs](https://learn.microsoft.com/en-us/azure/aks/hybrid/cluster-architecture)
+- **AKS on Azure Local 23H2 architecture**: [Azure Local AKS Docs](https://learn.microsoft.com/en-us/azure/aks/hybrid/cluster-architecture)
 
 ---
 

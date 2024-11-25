@@ -45,7 +45,7 @@
 
 ## Overview
 
-The **Cisco AI-Driven Enterprise Data Architecture** is a hybrid solution that combines the power of Azure Stack HCI running on Cisco UCS hardware with comprehensive Cisco connectivity and security products. This architecture leverages Azure services on-premises and in the cloud, enabling organizations to accelerate innovation, enhance security, and simplify operations.
+The **Cisco AI-Driven Enterprise Data Architecture** is a hybrid solution that combines the power of Azure Local running on Cisco UCS hardware with comprehensive Cisco connectivity and security products. This architecture leverages Azure services on-premises and in the cloud, enabling organizations to accelerate innovation, enhance security, and simplify operations.
 
 
 ---
@@ -124,7 +124,7 @@ In the event-driven data flow, a variety of devices within the smart building en
 ---
 
 #### 2. Machine Learning Driven Data Flow
-This flow involves collecting telemetry data from various devices through gRPC using Telegraf or other ingestion options. The data is processed using AKS (Azure Kubernetes Service) Machine Learning models deployed on Cisco UCS hardware with Azure Stack HCI or connected directly to Azure AKS. This enables advanced analytics, predictive maintenance, and intelligent decision-making, with the results visualized in Splunk.
+This flow involves collecting telemetry data from various devices through gRPC using Telegraf or other ingestion options. The data is processed using AKS (Azure Kubernetes Service) Machine Learning models deployed on Cisco UCS hardware with Azure Local or connected directly to Azure AKS. This enables advanced analytics, predictive maintenance, and intelligent decision-making, with the results visualized in Splunk.
 
 ![Machine Learning Driven Data Flow](../assets/SB_ML_Driven_Flow.svg)
 
@@ -303,7 +303,7 @@ These deployment options provide flexibility to balance performance, cost, data 
 
 To implement the Cisco AI-Driven Enterprise Data Architecture:
 
-1. **Deploy Azure Stack HCI on Cisco UCS**: Follow the [getting started guide](/docs/getting_started.md) to set up the foundational infrastructure.
+1. **Deploy Azure Local on Cisco UCS**: Follow the [getting started guide](/docs/getting_started.md) to set up the foundational infrastructure.
 2. **Integrate Cisco Security Solutions**: Configure Catalyst SD-WAN, Multicloud Defense, HyperShield, and Secure Firewall.
 3. **Set Up Azure Services**: Deploy Azure Arc, Azure Machine Learning, Azure OpenAI, and integrate Hugging Face models as needed.
 4. **Configure Data Ingestion**: Route events and data from Cisco devices and applications into the architecture.
@@ -321,7 +321,7 @@ The Cisco AI-Driven Enterprise Data Architecture empowers organizations to harne
 
 ## References
 
-- [Azure Stack HCI on Cisco UCS C-Series](cisco_azure_stack_hci.md)
+- [Azure Local on Cisco UCS C-Series](cisco_azure_local.md)
 - [Cisco Catalyst SD-WAN](cisco_catalyst_sdwan.md)
 - [Cisco Multicloud Defense](cisco_multicloud_defense.md)
 - [Azure Machine Learning](https://learn.microsoft.com/azure/machine-learning/)

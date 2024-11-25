@@ -1,6 +1,6 @@
 # Machine Learning Deployment Guide
 
-This guide provides step-by-step instructions to set up the environment necessary to run training and scoring pipelines for your machine learning models on Azure Stack HCI with Cisco UCS hardware. By the end of this guide, you will have a fully configured Azure Machine Learning workspace integrated with your Kubernetes cluster, ready to execute the pipelines outlined in the `code_structure.md`.
+This guide provides step-by-step instructions to set up the environment necessary to run training and scoring pipelines for your machine learning models on Azure Local with Cisco UCS hardware. By the end of this guide, you will have a fully configured Azure Machine Learning workspace integrated with your Kubernetes cluster, ready to execute the pipelines outlined in the `code_structure.md`.
 
 ---
 
@@ -24,7 +24,7 @@ This guide provides step-by-step instructions to set up the environment necessar
 
 ## Introduction
 
-This guide walks you through deploying a hybrid AI/ML solution on Azure Stack HCI with Cisco UCS hardware. The goal is to set up the environment so that you can run training and scoring pipelines described in the `code_structure.md`. The process involves creating necessary Azure resources, configuring your Kubernetes cluster, and integrating it with Azure Machine Learning services.
+This guide walks you through deploying a hybrid AI/ML solution on Azure Local with Cisco UCS hardware. The goal is to set up the environment so that you can run training and scoring pipelines described in the `code_structure.md`. The process involves creating necessary Azure resources, configuring your Kubernetes cluster, and integrating it with Azure Machine Learning services.
 
 ---
 
@@ -38,8 +38,8 @@ This guide walks you through deploying a hybrid AI/ML solution on Azure Stack HC
 Before you begin, ensure you have the following:
 
 - **Azure Subscription**: An active Azure subscription with appropriate permissions.
-- **Azure Stack HCI Cluster**: Deployed and configured on Cisco UCS hardware.
-- **Azure Kubernetes Service (AKS) or Azure Arc-enabled Kubernetes Cluster**: Set up on your Azure Stack HCI.
+- **Azure Local Cluster**: Deployed and configured on Cisco UCS hardware.
+- **Azure Kubernetes Service (AKS) or Azure Arc-enabled Kubernetes Cluster**: Set up on your Azure Local.
 - **Azure CLI**: Installed and configured on your local machine.
 - **Azure Machine Learning CLI Extension**: Installed (`azure-ai-ml`).
 - **Docker**: Installed if you plan to build and push Docker images.
@@ -53,7 +53,7 @@ The deployment consists of the following components:
 
 - **Azure Machine Learning Workspace**: Central hub for managing ML resources.
 - **Azure Resources**: Storage Account, Key Vault, Container Registry, Application Insights.
-- **Kubernetes Cluster**: AKS or Arc-enabled Kubernetes cluster running on Azure Stack HCI.
+- **Kubernetes Cluster**: AKS or Arc-enabled Kubernetes cluster running on Azure Local.
 - **Azure Machine Learning Extension**: Deployed on the Kubernetes cluster to enable ML workloads.
 - **Managed Identity**: Used for secure access to Azure resources.
 - **Training and Scoring Pipelines**: Executed on the Kubernetes cluster using Azure Machine Learning.
@@ -296,7 +296,7 @@ az ml environment create --file environments/cisco-mlflow-azureml-env.yml
 
 ### Running the Training and Scoring Pipelines
 
-You can now run training and scoring pipelines on Azure Stack HCI on UCS.<br>
+You can now run training and scoring pipelines on Azure Local on UCS.<br>
 Take a look at the instructions on how to start running machine learning pipelines:  [Running ML Pipelines](/docs/running_ml_workloads_guide.md)
  
 
@@ -304,8 +304,8 @@ Take a look at the instructions on how to start running machine learning pipelin
 
 - **Azure Machine Learning Documentation**: [Learn More](https://learn.microsoft.com/azure/machine-learning/)
 - **Deploy Azure Machine Learning Extension on Kubernetes**: [Read Article](https://learn.microsoft.com/azure/machine-learning/how-to-deploy-kubernetes-extension)
-- **AzureML Training & Inferencing Workloads On-Premises Using AKS on Azure Stack HCI Via Azure Arc**: [Learn More](https://github.com/Azure/AML-Kubernetes/tree/master/docs/AKS-HCI)
-- **Setting UP in NFS on Ubuntu on Azure Stack HCI**: [Learn More](https://help.ubuntu.com/community/SettingUpNFSHowTo)
+- **AzureML Training & Inferencing Workloads On-Premises Using AKS on Azure Local Via Azure Arc**: [Learn More](https://github.com/Azure/AML-Kubernetes/tree/master/docs/AKS-HCI)
+- **Setting UP in NFS on Ubuntu on Azure Local**: [Learn More](https://help.ubuntu.com/community/SettingUpNFSHowTo)
  
 ---
 

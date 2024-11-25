@@ -59,10 +59,10 @@ Before you begin, ensure you have the following:
 By deploying the app as an Azure App Service on AKS via Azure Arc, you can manage your application using familiar Azure services while running it on your on-premises or cloud-based Kubernetes cluster.
 
 ## Prerequisites
-Ensure your Azure Stack HCI cluster is properly deployed on Cisco UCS hardware and that AKS is installed and connected to Azure Arc.
+Ensure your Azure Local cluster is properly deployed on Cisco UCS hardware and that AKS is installed and connected to Azure Arc.
 References:
-  - [Azure Stack HCI Deployment](hci_deployment_guide.md)
-  - [AKS on Azure Stack HCI Deployment](aks_deployment_guide.md)
+  - [Azure Local Deployment](hci_deployment_guide.md)
+  - [AKS on Azure Local Deployment](aks_deployment_guide.md)
 
 
 
@@ -196,10 +196,10 @@ References:
 Deploying the app as a container on AKS gives you full control over the containerization process and deployment. This method involves building a Docker image of the app and deploying it to your AKS cluster.
 
 ## Prerequisites
-Ensure your Azure Stack HCI cluster is properly deployed on Cisco UCS hardware and that AKS is installed and connected to Azure Arc.
+Ensure your Azure Local cluster is properly deployed on Cisco UCS hardware and that AKS is installed and connected to Azure Arc.
 References:
-  - [Azure Stack HCI Deployment](hci_deployment_guide.md)
-  - [AKS on Azure Stack HCI Deployment](aks_deployment_guide.md)
+  - [Azure Local Deployment](azure_local_deployment_guide.md)
+  - [AKS on Azure Local Deployment](aks_deployment_guide.md)
     
 #### Steps
 

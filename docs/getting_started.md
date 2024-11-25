@@ -1,9 +1,9 @@
 # Getting Started Guide
 
-This guide provides step-by-step instructions to help you set up the foundational infrastructure for the **Cisco AI-Driven Enterprise Data Architecture** on Azure Stack HCI with Cisco UCS. It focuses on:
+This guide provides step-by-step instructions to help you set up the foundational infrastructure for the **Cisco AI-Driven Enterprise Data Architecture** on Azure Local with Cisco UCS. It focuses on:
 
-- Deploying Azure Stack HCI on Cisco UCS hardware.
-- Setting up Azure Kubernetes Service (AKS) on Azure Stack HCI.
+- Deploying Azure Local on Cisco UCS hardware.
+- Setting up Azure Kubernetes Service (AKS) on Azure Local.
 - Configuring Azure and Cisco resources required for the solution.
 
 For detailed deployment of AI/ML workloads and Generative AI applications, please refer to the specific deployment guides listed in the [Next Steps](#next-steps) section.
@@ -16,8 +16,8 @@ For detailed deployment of AI/ML workloads and Generative AI applications, pleas
 - [Architecture Overview](#architecture-overview)
 - [Setup Steps](#setup-steps)
   - [1. Clone the Repository](#1-clone-the-repository)
-  - [2. Deploy Azure Stack HCI on Cisco UCS](#2-deploy-azure-stack-hci-on-cisco-ucs)
-  - [3. Set Up AKS on Azure Stack HCI](#3-set-up-aks-on-azure-stack-hci)
+  - [2. Deploy Azure Local on Cisco UCS](#2-deploy-azure-local-on-cisco-ucs)
+  - [3. Set Up AKS on Azure Local](#3-set-up-aks-on-azure-local)
   - [4. Configure Cisco Networking and Security Products](#4-configure-cisco-networking-and-security-products)
 - [Next Steps](#next-steps)
 - [Additional Resources](#additional-resources)
@@ -59,11 +59,11 @@ cd your-repo
 
 ---
 
-### 2. Deploy Azure Stack HCI on Cisco UCS
+### 2. Deploy Azure Local on Cisco UCS
 
-Deploy Azure Stack HCI on your Cisco UCS hardware to provide the foundational infrastructure.
+Deploy Azure Local on your Cisco UCS hardware to provide the foundational infrastructure.
 
-- **Deployment Guide**: [Azure Stack HCI Deployment Guide](/deployment/hci_deployment_guide.md)
+- **Deployment Guide**: [Azure Local Deployment Guide](/deployment/hci_deployment_guide.md)
 
 **High-Level Steps**:
 
@@ -71,33 +71,33 @@ Deploy Azure Stack HCI on your Cisco UCS hardware to provide the foundational in
    - Ensure that Cisco UCS servers are properly installed and connected.
    - Verify firmware versions and hardware compatibility.
 
-2. **Install Azure Stack HCI**:
-   - Download the Azure Stack HCI installation media.
-   - Install Azure Stack HCI on each node following Microsoft's guidelines.
+2. **Install Azure Local**:
+   - Download the Azure Local installation media.
+   - Install Azure Local on each node following Microsoft's guidelines.
 
 3. **Set Up Networking**:
    - Configure networking settings for storage, management, and VM traffic.
    - Ensure that network adapters are properly teamed and configured.
 
 4. **Create the Cluster**:
-   - Use Windows Admin Center or PowerShell to create an Azure Stack HCI cluster.
+   - Use Windows Admin Center or PowerShell to create an Azure Local cluster.
    - Validate the cluster configuration.
 
 ---
 
-### 3. Set Up AKS on Azure Stack HCI
+### 3. Set Up AKS on Azure Local
 
-Deploy Azure Kubernetes Service (AKS) on Azure Stack HCI to run containerized workloads.
+Deploy Azure Kubernetes Service (AKS) on Azure Local to run containerized workloads.
 
-- **Deployment Guide**: [AKS on Azure Stack HCI Deployment Guide](/deployment/aks_deployment_guide.md)
+- **Deployment Guide**: [AKS on Azure Local Deployment Guide](/deployment/aks_deployment_guide.md)
 
 **High-Level Steps**:
 
-1. **Install AKS on Azure Stack HCI**:
+1. **Install AKS on Azure Local**:
    - Use PowerShell or Windows Admin Center to install AKS on your cluster.
 
 2. **Configure Kubernetes Cluster**:
-   - Create a Kubernetes cluster using AKS on Azure Stack HCI.
+   - Create a Kubernetes cluster using AKS on Azure Local.
    - Configure node pools and networking settings.
 
 3. **Validate the Deployment**:
@@ -158,8 +158,8 @@ With the foundational infrastructure in place, you can proceed to deploy specifi
   - **Guide**: [Hugging Face Deployment Guide](/deployment/hugging_face_guide.md)
 - **Machine Learning Deployment**:
   - **Guide**: [Machine Learning Deployment Guide](/deployment/ml_deployment_guide.md)
-- **Running ML Workloads on Cisco Azure Stack HCI**:
-  - **Guide**: [Running ML Workloads on Cisco Azure Stack HCI](running_ml_workloads_guide.md)
+- **Running ML Workloads on Cisco Azure Local**:
+  - **Guide**: [Running ML Workloads on Cisco Azure Local](running_ml_workloads_guide.md)
 
 ---
 
@@ -179,8 +179,8 @@ This project is licensed under the Apache License, Version 2.0. See the [LICENSE
 
 In this updated `getting_started.md`, the focus is on setting up the foundational infrastructure, including:
 
-- **Deployment of Azure Stack HCI on Cisco UCS hardware**.
-- **Setup of AKS on Azure Stack HCI**.
+- **Deployment of Azure Local on Cisco UCS hardware**.
+- **Setup of AKS on Azure Local**.
 - **Configuration of Cisco networking and security products**.
 - **Setup of Azure resources, including the Azure Machine Learning workspace and Azure Arc integration**.
 

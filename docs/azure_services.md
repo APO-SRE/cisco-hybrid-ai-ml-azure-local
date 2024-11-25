@@ -1,10 +1,10 @@
 
 # Azure Services Overview
 
-## Azure Stack HCI
-Azure Stack HCI (Hyperconverged Infrastructure) is a hybrid cloud solution designed to provide organizations with the flexibility to run workloads across on-premises data centers and the Azure cloud. It enables users to leverage Azure services like backup, monitoring, and disaster recovery, extending their data center capabilities to Azure while keeping sensitive data on-premises. Azure Stack HCI integrates with familiar Windows Server and Hyper-V technologies and is optimized for virtualized workloads and applications, enhancing data center efficiency and resilience.
+## Azure Local
+Azure Local (Hyperconverged Infrastructure) is a hybrid cloud solution designed to provide organizations with the flexibility to run workloads across on-premises data centers and the Azure cloud. It enables users to leverage Azure services like backup, monitoring, and disaster recovery, extending their data center capabilities to Azure while keeping sensitive data on-premises. Azure Local integrates with familiar Windows Server and Hyper-V technologies and is optimized for virtualized workloads and applications, enhancing data center efficiency and resilience.
 
-In this solution, Azure Stack HCI plays a critical role by providing a seamless bridge between on-premises and cloud environments. It enables businesses to benefit from Azure services without the need to migrate their entire infrastructure to the cloud. With the ability to manage workloads locally and extend to Azure as needed, Azure Stack HCI ensures scalability, enhanced security, and simplified hybrid cloud operations.
+In this solution, Azure Local plays a critical role by providing a seamless bridge between on-premises and cloud environments. It enables businesses to benefit from Azure services without the need to migrate their entire infrastructure to the cloud. With the ability to manage workloads locally and extend to Azure as needed, Azure Local ensures scalability, enhanced security, and simplified hybrid cloud operations.
 
 ## Azure Kubernetes Service (AKS)
 Azure Kubernetes Service (AKS) is Microsoft’s managed Kubernetes container orchestration service. It simplifies the deployment, management, and scaling of containerized applications, making it easier for developers to implement microservices architectures. AKS offers built-in continuous integration and continuous delivery (CI/CD) pipelines, automated patching, monitoring, and scaling, enabling robust and streamlined containerized application management. It integrates with Azure DevOps, further enhancing development efficiency and collaboration.

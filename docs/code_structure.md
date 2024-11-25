@@ -21,7 +21,7 @@ This document provides an overview of the code structure in the repository, expl
 
 ## Overview
 
-The code in this repository is designed to facilitate the deployment of a hybrid AI/ML solution on Azure Stack HCI with Cisco UCS hardware. It primarily focuses on:
+The code in this repository is designed to facilitate the deployment of a hybrid AI/ML solution on Azure Local with Cisco UCS hardware. It primarily focuses on:
 
 - **Training Pipeline**: Scripts and configurations for training machine learning models.
 - **Scoring Pipeline**: Scripts for model inference and scoring.
@@ -96,7 +96,7 @@ Below is the hierarchical structure of the `code` directory and related scripts:
 
 To set up the environment and prepare for running the pipelines, follow the steps in each of these sections:
 
-1. **[Azure Stack HCI Install](/deployment/hci_deployment_guide.md)**  
+1. **[Azure Local Install](/deployment/hci_deployment_guide.md)**  
 2. **[AKS Deployment Install](/deployment/aks_deployment_guide.md)**  
 3. **[Azure Machine Learning Deployment](/deployment/ml_deployment_guide.md)**  
 
