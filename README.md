@@ -25,9 +25,9 @@ This repository provides comprehensive documentation and resources for deploying
   - [Secure Firewall](docs/cisco_secure_firewall.md)
   - [Intersight](docs/cisco_intersight.md)
 - [Azure Services](#azure-services)
-- [AI/ML Resources](#ai-ml-resources)
-- [Cisco Azure Local AI Video Resources](#cisco-azure-stack-hci-ai-video-resources)
-- [Deployment Options](#deployment-options)
+- [AI/ML Resources](#aiml-resources)
+- [Cisco Azure Local AI Video Resources](#cisco-azure-local-ai-video-resources)
+- [Deployment Options](#deployment-optionssecurity-considerations)
 - [Contributing](#contributing)
 - [License](#license)
 
