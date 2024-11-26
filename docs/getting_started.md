@@ -63,7 +63,7 @@ cd your-repo
 
 Deploy Azure Local on your Cisco UCS hardware to provide the foundational infrastructure.
 
-- **Deployment Guide**: [Azure Local Deployment Guide](/deployment/hci_deployment_guide.md)
+- **Deployment Guide**: [Azure Local Deployment Guide](/deployment/azure_local_deployment_guide.md)
 
 **High-Level Steps**:
 
