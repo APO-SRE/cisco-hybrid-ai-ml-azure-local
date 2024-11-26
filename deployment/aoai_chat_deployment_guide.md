@@ -61,7 +61,7 @@ By deploying the app as an Azure App Service on AKS via Azure Arc, you can manag
 ## Prerequisites
 Ensure your Azure Local cluster is properly deployed on Cisco UCS hardware and that AKS is installed and connected to Azure Arc.
 References:
-  - [Azure Local Deployment](hci_deployment_guide.md)
+  - [Azure Local Deployment](azure_local_deployment_guide.md)
   - [AKS on Azure Local Deployment](aks_deployment_guide.md)
 
 

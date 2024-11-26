@@ -31,7 +31,7 @@ This guide focuses on creating a Kubernetes cluster on Azure Local, with prelimi
 
 Before beginning, ensure you have:
 - **Azure Local Already Deployed**
-  - [Azure Local Deployment](hci_deployment_guide.md)
+  - [Azure Local Deployment](azure_local_deployment_guide.md)
 - **Azure Subscription ID**
 - **Custom Location ID**: Set up during Azure Local deployment. Use the command below if needed:
   ```bash
