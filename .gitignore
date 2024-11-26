@@ -1,0 +1,25 @@
+# Logs
+*.log
+
+# Node modules
+node_modules/
+
+# Dependency directories
+vendor/
+
+# Build artifacts
+dist/
+build/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Linkspector configuration
+.linkspector.yml
