@@ -10,7 +10,7 @@ This guide provides step-by-step instructions to deploy a Hugging Face Large Lan
 - [Prerequisites](#prerequisites)
 - [Architecture Overview](#architecture-overview)
 - [Deployment Steps](#deployment-steps)
-  - [1. Set Up Azure Local and AKS](#1-set-up-azure-stack-local-and-aks)
+  - [1. Set Up Azure Local and AKS](#1-set-up-azure-local-and-aks)
   - [2. Prepare the Hugging Face LLM Docker Image](#2-prepare-the-hugging-face-llm-docker-image)
   - [3. Deploy the LLM as a Container on AKS](#3-deploy-the-llm-as-a-container-on-aks)
   - [4. Expose the LLM Endpoint](#4-expose-the-llm-endpoint)
@@ -64,7 +64,7 @@ Ensure your Azure Local cluster is properly deployed on Cisco UCS hardware and t
 
 **References**:
 
-- [Azure Local Deployment Guide on Cisco UCS](hci_deployment_guide.md)
+- [Azure Local Deployment Guide on Cisco UCS](azure_local_deployment_guide.md)
 - [AKS on Azure Local Deployment](aks_deployment_guide.md)
 
 

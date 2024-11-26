@@ -18,7 +18,6 @@ This guide provides step-by-step instructions to set up the environment necessar
   - [5. Verify the Setup](#5-verify-the-setup)
 - [Post-Deployment Configuration](#post-deployment-configuration)
 - [References](#references)
-- [Additional Resources](#additional-resources)
 
 ---
 

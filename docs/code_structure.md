@@ -10,12 +10,9 @@ This document provides an overview of the code structure in the repository, expl
 - [Directory Structure](#directory-structure)
 - [Key Files and Scripts](#key-files-and-scripts)
 - [Setup and Installation](#setup-and-installation)
-  - [Prerequisites](#prerequisites)
   - [Environment Setup](#environment-setup)
-- [Running the Pipelines](#running-the-pipelines)
-- [Dependencies and Requirements](#dependencies-and-requirements)
-- [Best Practices](#best-practices)
-- [Additional Resources](#additional-resources)
+- [Running the Pipelines](#run-pipelines)
+
 
 ---
 
@@ -96,7 +93,7 @@ Below is the hierarchical structure of the `code` directory and related scripts:
 
 To set up the environment and prepare for running the pipelines, follow the steps in each of these sections:
 
-1. **[Azure Local Install](/deployment/hci_deployment_guide.md)**  
+1. **[Azure Local Install](/deployment/azure_local_deployment_guide.md)**  
 2. **[AKS Deployment Install](/deployment/aks_deployment_guide.md)**  
 3. **[Azure Machine Learning Deployment](/deployment/ml_deployment_guide.md)**  
 

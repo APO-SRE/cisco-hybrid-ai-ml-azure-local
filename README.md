@@ -10,14 +10,14 @@ This repository provides comprehensive documentation and resources for deploying
 - [Getting Started](#getting-started)
 - [Code Structure](#code-structure)
 - [Deployment Guides](#deployment-guides)
-  - [Azure Local Deployment](deployment/hci_deployment_guide.md)
+  - [Azure Local Deployment](deployment/azure_local_deployment_guide.md)
   - [AKS on Azure Local Deployment](deployment/aks_deployment_guide.md)
   - [Chat App with Azure OpenAI Deployment](deployment/aoai_chat_deployment_guide.md)
   - [Hugging Face Deployment](deployment/hugging_face_guide.md)
   - [Machine Learning Deployment](deployment/ml_deployment_guide.md)
 - [Cisco Technologies](#cisco-technologies)
   - [Splunk Integration](docs/cisco_splunk.md)
-  - [HyperShield](docs/cisco_hypershield.md)
+  - [HyperShield](docs/hypershield.md)
   - [ThousandEyes](docs/cisco_thousandeyes.md)
   - [Catalyst SD-WAN](docs/cisco_catalyst_sdwan.md)
   - [Azure Local on Cisco UCS](docs/cisco_azure_local.md)
@@ -57,7 +57,7 @@ The repository is organized into the following directories:
 
 Detailed deployment instructions for various components of the solution are provided below:
 
-- **Azure Local Deployment**: [Deployment Guide](deployment/hci_deployment_guide.md)
+- **Azure Local Deployment**: [Deployment Guide](deployment/azure_local_deployment_guide.md)
 - **AKS on Azure Local Deployment**: [Deployment Guide](deployment/aks_deployment_guide.md)
 - **Chat App with Azure OpenAI Deployment**: [Deployment Guide](deployment/aoai_chat_deployment_guide.md)
 - **Hugging Face Deployment**: [Deployment Guide](deployment/hugging_face_guide.md)

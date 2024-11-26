@@ -20,7 +20,6 @@ For detailed deployment of AI/ML workloads and Generative AI applications, pleas
   - [3. Set Up AKS on Azure Local](#3-set-up-aks-on-azure-local)
   - [4. Configure Cisco Networking and Security Products](#4-configure-cisco-networking-and-security-products)
 - [Next Steps](#next-steps)
-- [Additional Resources](#additional-resources)
 - [Contributing](#contributing)
 - [License](#license)
 
