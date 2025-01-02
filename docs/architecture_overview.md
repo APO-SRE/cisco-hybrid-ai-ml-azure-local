@@ -70,7 +70,7 @@ The **Cisco AI-Driven Enterprise Data Architecture** is a hybrid solution that c
 
 ## Solution Diagram
 
-![Architecture Diagram](../assets/architecture_diagram.svg)
+![Architecture Diagram](../assets/solution_diagram.png)
 
 
 
@@ -113,7 +113,7 @@ Smart Buildings leverage the architecture to transform physical spaces into inte
 ### Device Connectivity Overview
 The Smart Building environment is characterized by seamless connectivity between various devices (sensors, cameras, HVAC systems, etc.) and the hybrid data center. Cisco on-premises infrastructure integrates with Azure Cloud to ensure robust connectivity and security.
 
-![Device Connectivity](../assets/SB_Device_Connectivity.svg)
+![Device Connectivity](../assets/smart_buildings.png)
 
 ---
 
