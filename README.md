@@ -3,6 +3,8 @@
 
 This repository provides comprehensive documentation and resources for deploying a hybrid AI/ML solution utilizing Azure Local on Cisco UCS hardware. The solution integrates Azure services with Cisco security and connectivity technologies to deliver a robust, secure, and scalable environment for AI/ML workloads.
 
+This repo is part of the [Cisco Data Bridge Project Suite] (https://github.com/APO-SRE/cisco-data-bridge-project-suite)
+
 ## Table of Contents
 
 - [Architecture Overview](#architecture-overview)
