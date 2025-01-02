@@ -144,6 +144,7 @@ Users interact with the smart building systems via a chatbot or other endpoint. 
 
 ![User Query Flow](../assets/SB_User_Query_Flow.svg)
 
+
 **Repository:** [cisco-data-bridge-ai-agent](https://github.com/APO-SRE/cisco-data-bridge-ai-agent)  
 ---
 #### Smart Building Use Cases
