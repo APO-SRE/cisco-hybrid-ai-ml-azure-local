@@ -1,4 +1,4 @@
-![Cisco Data Bridge Banner](assets/banner2.png)
+![Cisco Data Bridge Banner](assets/banner2b.png)
 ## Introduction
 
 This repository provides comprehensive documentation and resources for deploying a hybrid AI/ML solution utilizing Azure Local on Cisco UCS hardware. The solution integrates Azure services with Cisco security and connectivity technologies to deliver a robust, secure, and scalable environment for AI/ML workloads.
