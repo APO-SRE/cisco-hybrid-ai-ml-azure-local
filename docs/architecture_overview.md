@@ -134,8 +134,6 @@ This flow involves collecting telemetry data from various devices through gRPC u
 ---
 
 #### 3. User Query Flow
-Users interact with smart building systems through a chatbot or other endpoint. Queries are processed using ChatGPT or LangChain, which fetch data from Cisco Spaces and other platforms via API calls to the API Firehouse. The results are processed using serverless functions or application logic and then returned to the user in real time.
-
 Users interact with the smart building systems via a chatbot or other endpoint. Queries can be processed by **ChatGPT with functions and/or LangChain** or the **Cisco Data Bridge AI Agent**, which fetches data from Cisco Spaces and other platforms through the APIs. The results are then handled by functions or application logic and delivered back to the user in real time.
 
 
