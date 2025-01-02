@@ -72,7 +72,10 @@ The **Cisco AI-Driven Enterprise Data Architecture** is a hybrid solution that c
 
 ![Architecture Diagram](../assets/architecture_diagram.svg)
 
-*Figure: High-level overview of the Cisco AI-Driven Enterprise Data Architecture.*
+
+
+**Figure: High-level overview of the Cisco AI-Drivem Enterprise Data Architecture**
+
 ---
 
 ## Video - Architecture Overview
